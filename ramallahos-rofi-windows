@@ -1,0 +1,6 @@
+#!/bin/env bash
+themes=('dracula' 'gruvbox' 'material' 'minimal' 'murz' 'nord' 'onedark')
+theme="${themes[$(( $RANDOM % 7 ))]}"
+rofi -no-lazy-grab -show window -modi drun -theme /usr/bin/ramallahos-rofi-windows-resources/${theme}.rasi
+
+
